@@ -36,7 +36,7 @@ function displayMovies(movies) {
         const movieDiv = document.createElement('div');
         movieDiv.classList.add('movie');
         movieDiv.innerHTML = `
-            <img src="http://images.fandango.com/images/masterrepository/Fandango/186260/theAssassin.jpg" alt="${title}">
+            <img src="${IMG_PATH + poster_path}" alt="${title}">
             <div class="movie_info">
                 <h3>${title}</h3>
                 <span class="${getClassByRate(vote_average)}">${vote_average}</span>
@@ -46,7 +46,6 @@ function displayMovies(movies) {
                 ${overview}
             </div>
         `
-
         main.appendChild(movieDiv);
     });
 }
