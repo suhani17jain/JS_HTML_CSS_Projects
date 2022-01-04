@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.image {
+    background: url('https://images.unsplash.com/photo-1504215680853-026ed2a45def?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')
+    no-repeat center center/cover;
+    height: 400px;
+    width: 300px; 
+    margin: auto;
+    position: relative;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.image .fa-heart {
+    position: absolute;
+    animation: grow 0.6s linear;
+    transform: translate(-50%, -50%) scale(10);
+}
+
+@keyframes grow {
+    to {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+}
