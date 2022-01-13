@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.container {
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    overflow: hidden;
+}
+
+header {
+    padding: 30px 20px;
+    background-color: rgb(96, 96, 238);
+    color: #fff;
+}
+
+.title {
+    margin: 0;
+    font-size: 25px;
+}
+
+.subTitle {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+input {
+    background-color: rgb(9, 9, 122);
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.user-list {
+    background-color: #fff;
+    overflow-y: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 400px;
+}
+
+.user-list li {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.user-list li:not(:last-of-type) {
+    border-bottom: 1px solid gray;
+}
+
+.user img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50%;
+}
+
+.user .userInfor {
+    margin-left: 30px;
+}
+
+.user-list li.hide {
+    display: none;
+  }
