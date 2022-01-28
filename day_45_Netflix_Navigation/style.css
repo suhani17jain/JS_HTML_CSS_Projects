@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+}
+
+.logo {
+    width: 150px;
+}
+
+.title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+    font-size: 25px;
+}
+
+.btn_open {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-110%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav.visible {
+    transform: translateX(0);
+}
+
+.nav-black {
+    width: 25%;
+    background-color: black;
+    height: 100%;
+    transition-delay: 0.4s;
+}
+
+.nav-black.visible {
+    transition-delay: 0s;
+}
+
+.nav-red {
+    width: 95%;
+    height: 100%;
+    background-color: red;
+    transition-delay: 0.2s;
+}
+
+.nav-red.visible {
+    transition-delay: 0.2s;
+}
+
+.nav-white {
+    width: 95%;
+    height: 100%;
+    background-color: white;
+    padding: 40px;
+    position: relative;
+    transition-delay: 0s;
+}
+
+.nav-white.nav.visible {
+    transition-delay: 0.4s;
+}
+
+.btn-close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    opacity: 0.3;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.list {
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+.list li {
+    margin: 20px 0;
+}
+
+.list li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.list ul li {
+    list-style-type: none;
+    margin: 20px 0;
+}
